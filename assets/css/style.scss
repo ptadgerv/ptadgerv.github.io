@@ -1,0 +1,24 @@
+---
+---
+
+@import "minima/skins/classic", "minima/initialize";
+
+/* Custom Navigation Bar */
+.site-nav {
+  display: flex;
+  justify-content: center; /* Centers links horizontally */
+  gap: 20px;
+  background-color: #004080; /* Dark blue background */
+  padding: 12px;
+}
+
+.site-nav a {
+  color: white !important;  /* White text */
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.site-nav a:hover {
+  color: #ffcc00 !important; /* Yellow hover effect */
+}
