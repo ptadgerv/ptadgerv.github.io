@@ -17,8 +17,8 @@ plugins:
 
 minima:
   nav_pages:
-    - index
-    - about
+    - index.md
+    - about.md
 
 sass:
   sass_dir: _sass
