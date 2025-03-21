@@ -28,13 +28,10 @@ minima:
   skin: solarized-light
 
 # Navigation (Ensure this exists)
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "About"
-    url: "/about"
-  - title: "Projects"
-    url: "/projects"
+
+ nav_pages:
+    - about.md
+    - index.md
 
 sass:
   sass_dir: _sass
