@@ -1,7 +1,7 @@
 ---
 title: Home
 #layout: default
-layout: home
+layout: default
 ---
  
 **Ixelles, Belgium**  
