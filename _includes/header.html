@@ -1,6 +1,24 @@
 <header class="site-header" role="banner">
   <div class="wrapper">
     <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+
+<!-- DEBUG INFO: -->
+<div style="background: #ffdddd; padding: 10px; border: 1px solid red;">
+  <p><strong>Debugging Navigation:</strong></p>
+  <ul>
+    {% for nav_page in site.minima.nav_pages %}
+      {% assign my_page = site.pages | where_exp: "item", "item.path contains nav_page" | first %}
+      <li>
+        <strong>Path:</strong> {{ nav_page }} |
+        <strong>Title:</strong> {% if my_page %} {{ my_page.title }} {% else %} MISSING {% endif %} |
+        <strong>URL:</strong> {% if my_page %} {{ my_page.url }} {% else %} MISSING {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+    
+    
     <nav class="site-nav">
       <ul>
         {% for nav_page in site.minima.nav_pages %}
