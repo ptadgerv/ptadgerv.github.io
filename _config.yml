@@ -19,3 +19,7 @@ minima:
   nav_pages:
     - index.md
     - about.md
+
+sass:
+  sass_dir: _sass
+  style: compressed
